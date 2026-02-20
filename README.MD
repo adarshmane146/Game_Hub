@@ -2,6 +2,10 @@
 
 GameHub is a responsive, dark-themed web portal that allows users to browse, search, and play a variety of free online HTML5 games. It features a modern user interface with neon accents, smooth hover effects, and instant filtering.
 
+## ⚠️ Disclaimer & Game Sources
+
+**I do not own, develop, or host any of the playable games featured on this website.** GameHub acts strictly as an aggregator and portal. Clicking on any game card redirects the user to the original publisher's platform via [GameDistribution](https://gamedistribution.com/). This project was built specifically for educational and portfolio purposes to demonstrate frontend web development skills.
+
 ## ✨ Features
 
 * **Real-time Search:** Instantly filter through the game library using the top search bar. If no games match, a friendly "No results" message is displayed.
@@ -13,7 +17,7 @@ GameHub is a responsive, dark-themed web portal that allows users to browse, sea
 ## 🛠️ Tech Stack
 
 * **HTML5:** Semantic structure and layout.
-* **CSS3:** Custom styling, CSS Grid, Flexbox, and animations (embedded in the HTML for quick loading).
+* **CSS3:** Custom styling, CSS Grid, Flexbox, and animations.
 * **Vanilla JavaScript:** DOM manipulation for search logic and category filtering.
 
 ## 📁 File Structure
@@ -22,5 +26,5 @@ GameHub is a responsive, dark-themed web portal that allows users to browse, sea
 📦 WORKING HTMLGAME
  ┣ 📜 index.html         # Main application file (HTML, CSS, JS)
  ┣ 📜 ads.txt            # AdSense verification file
- ┣ 📜 style.css          # External stylesheet (if extracted from index.html)
+ ┣ 📜 style.css          # External stylesheet 
  ┗ 🖼️ *.jpg              # Local game thumbnail assets (image1.jpg - image24.jpg)
