@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FFG37BFV5F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FFG37BFV5F');
+</script>
+    <title>GameHub - Play Free Online Games</title>
+ <style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #0f2027, #000000);
+    min-height: 100vh;
+    color: #e5e7eb;
+}
+
+/* HEADER */
+header {
+    background: rgba(15, 23, 42, 0.95);
+    padding: 1.2rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.15);
+}
+
+header h1 {
+    font-size: 2.6rem;
+    text-align: center;
+    font-weight: 800;
+    background: linear-gradient(90deg, #22d3ee, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* SEARCH */
+#search {
+    width: 100%;
+    max-width: 480px;
+    margin: 1.2rem auto 0;
+    display: block;
+    padding: 0.9rem 1.4rem;
+    border-radius: 999px;
+    border: none;
+    outline: none;
+    background: #020617;
+    color: #e5e7eb;
+    font-size: 1rem;
+    box-shadow: 0 0 0 2px rgba(34, 211, 238, 0.2);
+    transition: 0.3s;
+}
+
+#search:focus {
+    box-shadow: 0 0 0 2px #22d3ee, 0 0 20px rgba(34, 211, 238, 0.5);
+}
+
+/* NAVBAR */
+nav {
+    background: rgba(2, 6, 23, 0.9);
+    margin: 1.5rem;
+    padding: 1rem;
+    border-radius: 16px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #cbd5f5;
+    padding: 0.7rem 1.4rem;
+    border-radius: 999px;
+    font-weight: 600;
+    background: rgba(255,255,255,0.04);
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: linear-gradient(135deg, #22d3ee, #a855f7);
+    color: #000;
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+}
+
+/* MAIN */
+main {
+    max-width: 1400px;
+    margin: auto;
+    padding: 2rem;
+}
+
+/* CATEGORY TITLE */
+.category-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #22d3ee;
+    letter-spacing: 1px;
+}
+
+/* GRID */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+/* GAME CARD */
+.game-card {
+    background: linear-gradient(180deg, #020617, #020617);
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.06);
+    transition: 0.35s ease;
+    position: relative;
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 35px rgba(34, 211, 238, 0.35);
+}
+
+.game-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    background: #020617;
+}
+
+/* GAME TITLE */
+.game-card h2 {
+    padding: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #e5e7eb;
+}
+
+/* NEON BAR */
+.game-card::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 3px;
+    background: linear-gradient(90deg, #22d3ee, #a855f7);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.game-card:hover::after {
+    opacity: 1;
+}
+
+/* NO RESULTS */
+.no-results {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #22d3ee;
+    padding: 3rem;
+}
+
+/* FOOTER */
+footer {
+    background: #020617;
+    text-align: center;
+    padding: 2rem;
+    color: #94a3b8;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.1rem;
+    }
+    main {
+        padding: 1rem;
+    }
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9688476537792798"
+     crossorigin="anonymous">
+    </script>
+        <h1>🎮 GameHub</h1>
+        <input type="text" id="search" placeholder="Search for games...">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9688476537792798"
+     crossorigin="anonymous"></script>
+    </header>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9688476537792798"
+     crossorigin="anonymous"></script>
+<!-- Homepage_Top_728x90 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9688476537792798"
+     data-ad-slot="8058909607"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    <nav>
+        <ul>
+            
+            <li><a href="#" data-category="action">🔫 Action</a></li>
+            <li><a href="#" data-category="sports">⚽ Sports</a></li>
+            <li><a href="#" data-category="racing">🏎️ Racing</a></li>
+            <li><a href="#" data-category="adventure">🗺️ Adventure</a></li>
+            <li><a href="#" data-category="puzzle">🧩 Puzzle</a></li>
+            <li><a href="#" data-category="all">📱 All Games</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="category-section" data-category="action">
+                       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9688476537792798"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-6t+ed+2i-1n-4w"
+     data-ad-client="ca-pub-9688476537792798"
+     data-ad-slot="8243259354"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            <h2 class="category-title">🔫 Action Games</h2>
+ 
+            <div class="games-grid">
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/0eb473da1c0546f39e348d83219db5e7/?gd_sdk_referrer_url=https://gamedistribution.com/games/fps-assault-shooter/" target="_blank">
+                        <img src="game3-thumbnail.jpg" alt="FPS Assault Shooter" onerror="this.style.background='linear-gradient(45deg, #ff6b6b, #ee5a52)'; this.innerHTML='🎯<br>FPS Assault Shooter';">
+                        <h2>FPS Assault Shooter</h2>
+                    </a>
+                </div>
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/7d0574417a0d4c158b4d6e381f1c4a3e/?gd_sdk_referrer_url=https://gamedistribution.com/games/commando-force-2/" target="_blank">
+                        <img src="image1.jpg" alt="Commando Force 2" onerror="this.style.background='linear-gradient(45deg, #4ecdc4, #44a08d)'; this.innerHTML='💂<br>Commando Force 2';">
+                        <h2>Commando Force 2</h2>
+                    </a>
+                </div>
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/59361631a2614fc095ef2a1740e02d78/?gd_sdk_referrer_url=https://gamedistribution.com/games/strykon/" target="_blank">
+                        <img src="image3.jpg" alt="Strykon" onerror="this.style.background='linear-gradient(45deg, #a8edea, #fed6e3)'; this.innerHTML='⚔️<br>Strykon';">
+                        <h2>Strykon</h2>
+                    </a>
+                </div>
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/626030ce36a249729e19df483d7836dc/?gd_sdk_referrer_url=https://gamedistribution.com/games/fragen/" target="_blank">
+                        <img src="image2.jpg" alt="Fragen" onerror="this.style.background='linear-gradient(45deg, #667eea, #764ba2)'; this.innerHTML='🎮<br>Fragen';">
+                        <h2>Fragen</h2>
+                    </a>
+                </div>
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/caaa9021c03b438db35ae532051e2e24/?gd_sdk_referrer_url=https://gamedistribution.com/games/delta-force-airborne/" target="_blank">
+                        <img src="image4.jpg" alt="Delta Force Airborne" onerror="this.style.background='linear-gradient(45deg, #ff9a9e, #fecfef)'; this.innerHTML='✈️<br>Delta Force Airborne';">
+                        <h2>Delta Force Airborne</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-section" data-category="sports">
+            <h2 class="category-title">⚽ Sports Games</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/4ffc798ffa08450fa23ceb8935f0ae6d/?gd_sdk_referrer_url=https://gamedistribution.com/games/table-tennis-open/" target="_blank">
+                        <img src="image5.jpg" alt="Table Tennis Open" onerror="this.style.background='linear-gradient(45deg, #ffecd2, #fcb69f)'; this.innerHTML='🏓<br>Table Tennis Open';">
+                        <h2>Table Tennis Open</h2>
+                    </a>
+                </div>
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/0294e92561744e658eebd24b7bf6fadf/?gd_sdk_referrer_url=https://gamedistribution.com/games/volley-bean/" target="_blank">
+                        <img src="image6.jpg" alt="Volley Bean" onerror="this.style.background='linear-gradient(45deg, #a8edea, #fed6e3)'; this.innerHTML='🏐<br>Volley Bean';">
+                        <h2>Volley Bean</h2>
+                    </a>
+                </div>
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/edbbaebf77684e2487c978537a37e5f4/?gd_sdk_referrer_url=https://gamedistribution.com/games/archery-legends/" target="_blank">
+                        <img src="image7.jpg" alt="Archery Legends" onerror="this.style.background='linear-gradient(45deg, #d299c2, #fef9d7)'; this.innerHTML='🏹<br>Archery Legends';">
+                        <h2>Archery Legends</h2>
+                    </a>
+                </div>
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/e2c035f654cf4b1d91f6d4c57b649b50/?gd_sdk_referrer_url=https://gamedistribution.com/games/hotfoot-baseball/" target="_blank">
+                        <img src="image8.jpg" alt="Hotfoot Baseball" onerror="this.style.background='linear-gradient(45deg, #89f7fe, #66a6ff)'; this.innerHTML='⚾<br>Hotfoot Baseball';">
+                        <h2>Hotfoot Baseball</h2>
+                    </a>
+                </div>
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/6809fe27aaee4457a3afe836c46d6708/?gd_sdk_referrer_url=https://gamedistribution.com/games/marathon-race-io/" target="_blank">
+                        <img src="image9.jpg" alt="Marathon Race" onerror="this.style.background='linear-gradient(45deg, #ff9a9e, #fad0c4)'; this.innerHTML='🏃<br>Marathon Race';">
+                        <h2>Marathon Race</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-section" data-category="racing">
+            <h2 class="category-title">🏎️ Racing Games</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/fce750f12dda4320ab5e5b638995459f/?gd_sdk_referrer_url=https://gamedistribution.com/games/mr.-drifter:-car-chase-simulator" target="_blank">
+                        <img src="image10.jpg" alt="Mr Drifter" onerror="this.style.background='linear-gradient(45deg, #667eea, #764ba2)'; this.innerHTML='🚗<br>Mr Drifter';">
+                        <h2>Mr Drifter</h2>
+                    </a>
+                </div>
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/0072a8afa16a480bb4fe52fbe59ea885/?gd_sdk_referrer_url=https://gamedistribution.com/games/formula-racers/" target="_blank">
+                        <img src="image11.jpg" alt="Formula Racers" onerror="this.style.background='linear-gradient(45deg, #ff6b6b, #ee5a52)'; this.innerHTML='🏎️<br>Formula Racers';">
+                        <h2>Formula Racers</h2>
+                    </a>
+                </div>
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/7156533d158642919ee04df203b39205/?gd_sdk_referrer_url=https://gamedistribution.com/games/race-it:-car-racing/" target="_blank">
+                        <img src="image12.jpg" alt="Car Racing" onerror="this.style.background='linear-gradient(45deg, #4ecdc4, #44a08d)'; this.innerHTML='🚙<br>Car Racing';">
+                        <h2>Car Racing</h2>
+                    </a>
+                </div>
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/5561ebaa420443249301fe90a36c4e95/?gd_sdk_referrer_url=https://gamedistribution.com/games/mega-ramp-car-stunts-2/" target="_blank">
+                        <img src="image13.jpg" alt="Mega Ramp Car Stunts" onerror="this.style.background='linear-gradient(45deg, #ffecd2, #fcb69f)'; this.innerHTML='🛻<br>Mega Ramp Car Stunts';">
+                        <h2>Mega Ramp Car Stunts</h2>
+                    </a>
+                </div>
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/cd5c068325f24c17b787a29db2eb1765/?gd_sdk_referrer_url=https://gamedistribution.com/games/moto-attack/" target="_blank">
+                        <img src="image14.jpg" alt="Moto Attack" onerror="this.style.background='linear-gradient(45deg, #a8edea, #fed6e3)'; this.innerHTML='🏍️<br>Moto Attack';">
+                        <h2>Moto Attack</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-section" data-category="adventure">
+            <h2 class="category-title">🗺️ Adventure Games</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/561d4a2d831d4630a9c29b2c51a3a5bf/?gd_sdk_referrer_url=https://gamedistribution.com/games/grand-hotel/" target="_blank">
+                        <img src="image15.jpg" alt="Grand Hotel" onerror="this.style.background='linear-gradient(45deg, #d299c2, #fef9d7)'; this.innerHTML='🏨<br>Grand Hotel';">
+                        <h2>Grand Hotel</h2>
+                    </a>
+                </div>
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/d372696dccf240b9b277727fdf6da9b4/?gd_sdk_referrer_url=https://gamedistribution.com/games/superhero-escape-run-parkour-challenge!/" target="_blank">
+                        <img src="image16.jpg" alt="Superhero Escape Run Parkour" onerror="this.style.background='linear-gradient(45deg, #89f7fe, #66a6ff)'; this.innerHTML='🦸<br>Superhero Parkour';">
+                        <h2>Superhero Escape Run Parkour</h2>
+                    </a>
+                </div>
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/bd719283849c4f7c9b479c1d58c7461a/?gd_sdk_referrer_url=https://gamedistribution.com/games/jungle-fury-mutant-rhino-mayhem/" target="_blank">
+                        <img src="image17.jpg" alt="Jungle Fury Mutant Rhino Mayhem" onerror="this.style.background='linear-gradient(45deg, #ff9a9e, #fad0c4)'; this.innerHTML='🦏<br>Jungle Fury';">
+                        <h2>Jungle Fury Mutant Rhino Mayhem</h2>
+                    </a>
+                </div>
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/9af385361fe04fca96a502e95dddc160/?gd_sdk_referrer_url=https://gamedistribution.com/games/granny-returns-3d-:-evil-destiny/" target="_blank">
+                        <img src="image18.jpg" alt="Granny Returns 3D" onerror="this.style.background='linear-gradient(45deg, #667eea, #764ba2)'; this.innerHTML='👵<br>Granny Returns 3D';">
+                        <h2>Granny Returns 3D</h2>
+                    </a>
+                </div>
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/e5c41772e13f49d891a9bff3ea726943/?gd_sdk_referrer_url=https://gamedistribution.com/games/jailbreak-:-escape-from-prison/" target="_blank">
+                        <img src="image19.jpg" alt="Jailbreak: Escape from Prison" onerror="this.style.background='linear-gradient(45deg, #ff6b6b, #ee5a52)'; this.innerHTML='🔓<br>Jailbreak';">
+                        <h2>Jailbreak: Escape from Prison</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-section" data-category="puzzle">
+            <h2 class="category-title">🧩 Puzzle Games</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/cac3bcfeca5c41cf999efe0d2a6489ce/?gd_sdk_referrer_url=https://gamedistribution.com/games/stickman-rescue-draw-2-save/" target="_blank">
+                        <img src="image20.jpg" alt="Stickman Rescue Draw 2 Save" onerror="this.style.background='linear-gradient(45deg, #4ecdc4, #44a08d)'; this.innerHTML='🎯<br>Stickman Rescue';">
+                        <h2>Stickman Rescue Draw 2 Save</h2>
+                    </a>
+                </div>
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/a0659e218120468a85ce8120de78efe3/?gd_sdk_referrer_url=https://gamedistribution.com/games/logic-blast-explorer/" target="_blank">
+                        <img src="image21.jpg" alt="Logic Blast Explorer" onerror="this.style.background='linear-gradient(45deg, #ffecd2, #fcb69f)'; this.innerHTML='💡<br>Logic Blast Explorer';">
+                        <h2>Logic Blast Explorer</h2>
+                    </a>
+                </div>
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/1ddf3db7f3cb40e98261f002537408e2/?gd_sdk_referrer_url=https://gamedistribution.com/games/tangle-master-3d-1/" target="_blank">
+                        <img src="image22.jpg" alt="Tangle Master 3D" onerror="this.style.background='linear-gradient(45deg, #a8edea, #fed6e3)'; this.innerHTML='🧩<br>Tangle Master 3D';">
+                        <h2>Tangle Master 3D</h2>
+                    </a>
+                </div>
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/904bc37384d64d90bd310319fee5d0db/?gd_sdk_referrer_url=https://gamedistribution.com/games/happy-blocks-1/" target="_blank">
+                        <img src="image23.jpg" alt="Happy Blocks" onerror="this.style.background='linear-gradient(45deg, #d299c2, #fef9d7)'; this.innerHTML='🟩<br>Happy Blocks';">
+                        <h2>Happy Blocks</h2>
+                    </a>
+                </div>
+                <div class="game-card">
+                    <a href="https://html5.gamedistribution.com/f5beb807a50b4442b2b3a4fa254443dc/?gd_sdk_referrer_url=https://gamedistribution.com/games/knots/" target="_blank">
+                        <img src="image24.jpg" alt="Knots" onerror="this.style.background='linear-gradient(45deg, #89f7fe, #66a6ff)'; this.innerHTML='🪢<br>Knots';">
+                        <h2>Knots</h2>
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9688476537792798"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-9688476537792798"
+     data-ad-slot="2477046918"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        <div id="no-results" class="no-results hidden">
+            <p>🔍 No games found matching your search. Try a different keyword!</p>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 GameHub - Play Free Online Games</p>
+    </footer>
+
+    <script>
+        const searchInput = document.getElementById('search');
+        const categoryButtons = document.querySelectorAll('nav a');
+        const categorySections = document.querySelectorAll('.category-section');
+        const noResults = document.getElementById('no-results');
+        let currentCategory = 'all';
+
+        // Search functionality
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase().trim();
+            const gameCards = document.querySelectorAll('.game-card');
+            let hasResults = false;
+
+            gameCards.forEach(card => {
+                const gameTitle = card.querySelector('h2').textContent.toLowerCase();
+                const categorySection = card.closest('.category-section');
+                const categoryMatch = currentCategory === 'all' || categorySection.dataset.category === currentCategory;
+                const searchMatch = !searchTerm || gameTitle.includes(searchTerm);
+                
+                if (categoryMatch && searchMatch) {
+                    card.style.display = 'block';
+                    hasResults = true;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Show/hide category sections based on search
+            categorySections.forEach(section => {
+                const visibleCards = section.querySelectorAll('.game-card[style*="block"], .game-card:not([style*="none"])');
+                const hasVisibleCards = Array.from(visibleCards).some(card => 
+                    card.style.display !== 'none'
+                );
+                
+                if (searchTerm && hasVisibleCards) {
+                    section.style.display = 'block';
+                } else if (searchTerm && !hasVisibleCards) {
+                    section.style.display = 'none';
+                } else if (!searchTerm) {
+                    if (currentCategory === 'all' || section.dataset.category === currentCategory) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                }
+            });
+
+            // Show no results message
+            noResults.classList.toggle('hidden', hasResults);
+        });
+
+        // Category filtering
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Update active button
+                categoryButtons.forEach(btn => btn.style.background = '');
+                this.style.background = 'linear-gradient(45deg, #667eea, #764ba2)';
+                this.style.color = 'white';
+                
+                currentCategory = this.dataset.category;
+                searchInput.value = '';
+                
+                // Show/hide sections
+                categorySections.forEach(section => {
+                    if (currentCategory === 'all' || section.dataset.category === currentCategory) {
+                        section.style.display = 'block';
+                        // Show all cards in visible sections
+                        section.querySelectorAll('.game-card').forEach(card => {
+                            card.style.display = 'block';
+                        });
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+                
+                noResults.classList.add('hidden');
+            });
+        });
+
+        // Initialize with all games visible
+        categoryButtons[5].click(); // Click "All Games" by default
+    </script>
+</body>
+</html>
